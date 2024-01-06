@@ -1,0 +1,363 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: black;
+    padding: 20px 50px;
+    color: white;
+}
+
+.navtop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchbar{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+}
+.searchinput{
+    border: none;
+    background-color: transparent;
+
+}
+.searchinput::placeholder{
+    color: lightgrey;
+}
+
+.limitedoffer{
+    font-size: 20px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+
+}
+
+.navbottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menuitem{
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+}
+
+
+.slider{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+    overflow: hidden;
+}
+
+.sliderwrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 1.5s ease-in-out ;
+
+}
+
+.slideritem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.slidebg{
+    width: 750px;
+    height: 750px;
+    
+    border-radius: 50%;
+    position: absolute;
+}
+
+.slider img{
+    z-index: 1;
+}
+
+
+.slidertitle{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    color: white;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    z-index: 1;
+
+}
+.sliderprice{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: white;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    border: 1px solid gray;
+    z-index: 1;
+    
+}
+
+.buybutton{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    border: 1px solid gray;
+    background-color: black;
+    z-index: 1;
+    cursor: pointer;
+    
+}
+
+.buybutton:hover{
+    background-color: white;
+    color: black;
+}
+
+.slideritem:nth-child(1) .slidebg{
+    background-color: #369e62;
+}
+
+.slideritem:nth-child(2) .slidebg{
+    background-color: rebeccapurple;
+}
+.slideritem:nth-child(3) .slidebg{
+    background-color: teal;
+}
+.slideritem:nth-child(4) .slidebg{
+    background-color: cornflowerblue;
+}
+.slideritem:nth-child(5) .slidebg{
+    background-color: rgb(124, 155, 80);
+}
+
+.slideritem:nth-child(1) .sliderprice{
+    color: #369e62;
+}
+
+.slideritem:nth-child(2) .sliderprice{
+    color: rebeccapurple;
+}
+.slideritem:nth-child(3) .sliderprice{
+    color: teal;
+}
+.slideritem:nth-child(4) .sliderprice{
+    color: cornflowerblue;
+}
+.slideritem:nth-child(5) .sliderprice{
+    color: rgb(124, 155, 80);
+}
+
+.features{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.featureicon{
+    width: 50px;
+    height: 50px;
+}
+
+.featuretitle{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.featuredesc{
+   color: gray; 
+   width:50%;
+   height: 100px;
+
+}
+
+
+.product{
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+    
+
+}
+
+.payment{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+    -webkit-box-shadow: 1px -7px 20px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px -7px 20px -4px rgba(0,0,0,0.75);
+box-shadow: 1px -7px 20px -4px rgba(0,0,0,0.75);
+}
+
+.paytitle{
+    font-size: 14px;
+    color: lightgray;
+    
+}
+label{
+    font-size: 14px;
+    font-weight: 300;
+
+}
+.payinput{
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.payinput::placeholder {
+    color: lightgray;
+}
+.cardicons{
+    display: flex;
+}
+
+.cardicon{
+    margin-right: 10px;
+}
+
+.cardinfo{
+    display: flex;
+    justify-content: space-between;
+}
+.sm{
+    width: 30px;
+}
+
+.paybutton{
+    position: absolute;
+    height: 40px;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    -webkit-box-shadow: 1px -7px 20px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px -7px 20px -4px rgba(0,0,0,0.75);
+    box-shadow: 1px -7px 20px -4px rgba(0,0,0,0.75);
+    background-color: #369e62;
+    color: white;
+    border: none;
+    cursor: pointer;
+   
+}
+.close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 2px;
+
+}
+
+
+.productImg {
+    width: 50%;
+}
+  
+.productDetails {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+}
+  
+.productTitle {
+    font-size: 75px;
+    font-weight: 900;
+}
+  
+.productDesc {
+    font-style: 24px;
+    color: gray;
+}
+  
+.colors,
+  .sizes {
+    display: flex;
+    margin-bottom: 20px;
+}
+  
+.color {
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
+}
+  
+.color:last-child {
+    background-color: darkblue;
+}
+  
+.size {
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+  
+.productButton {
+    float: right;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+  
+  .productButton:hover {
+    background-color: white;
+    color: black;
+}
